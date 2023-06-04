@@ -1,0 +1,199 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: 120px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    margin: 0px auto;
+}
+header nav {
+    text-align: center;
+}
+.NuestroTrabajo, .quienesSomos {
+    width: 100%;
+}
+.NuestroTrabajo .titulo, .quienesSomos .titulo {
+    width: 100%;
+    height: 150px;
+    background-color: #1d71b8;
+    text-align: center;
+    padding-top: 40px;
+
+}
+.NuestroTrabajo .titulo h2,.quienesSomos .titulo h2 {
+    font-family: 'Alata', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+.NuestroTrabajo .titulo p,.quienesSomos .titulo p {
+    color: white;
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.quienesSomos .presentacion {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px auto;
+    justify-content: center;
+}
+.quienesSomos .presentacion .texto {
+    width: 350px;
+    height: 300px;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    color: #706f6f;
+    vertical-align: top;
+    padding: 50px 30px;
+}
+.quienesSomos .presentacion .img {
+    text-align:right;
+    width: 350px;
+    height: 300px;
+}
+
+.NuestroTrabajo .presentacion {
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    margin: 0px auto;
+    justify-content: center;
+}
+.NuestroTrabajo .presentacion .texto {
+    width: 350px;
+    height: 300px;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    text-align: right;
+    color: #706f6f;
+    vertical-align: top;
+    padding: 50px 30px;
+}
+.NuestroTrabajo .presentacion .img {
+    text-align:left;
+    width: 350px;
+    height: 300px;
+}
+
+footer.pie {
+    width: 75%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+    
+
+}
+
+footer.pie a {
+    text-decoration: none;
+}
+footer .copyPie {
+    width: 500px;
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+    text-align: right;
+    color: #706f6f;
+}
+footer .redes {
+    width: 500px;
+}
+.txt-14-gris {
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+    color: #706f6f;
+}
+.txt-right {
+    text-align: right;
+}
+.txt-left {
+    text-align: left;
+}
+.cvAliado {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "v1 c1 c2 c3 v2"
+    "v1 c4 c5 c5 v2";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.v1 {
+    grid-area: v1;
+}
+.c2 {
+    grid-area: c2;
+}
+.c3 {
+    grid-area: c3;
+}
+.c4 {
+    grid-area: c4;
+}
+.c5 {
+    grid-area: c5;
+    text-align: center;
+}
+.v2 {
+    grid-area: v2;
+}
+.c4 h2 {
+    font-family: 'Alata', sans-serif;
+    font-size: 26px;
+    color: #444444;
+
+}
+/* diseño Mobile */
+@media (max-width:767px) {
+    .quienesSomos .presentacion .texto {
+        text-align:center;
+    }
+    .quienesSomos .presentacion .img {
+        text-align: center;
+    }
+    .NuestroTrabajo .presentacion .texto {
+        text-align:center;
+    }
+    .NuestroTrabajo .presentacion .img {
+        text-align: center;
+    }
+    
+    .cvAliado {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 0.50fr 0.5fr;
+        grid-template-areas: "c1"
+        "c2"
+        "c3"
+        "c4"
+        "c5" ;
+
+    }
+    .v1 {
+        display: none;
+    }
+    .v2 {
+        display: none;
+    }
+    .c1,.c2,.c3,.c4 {
+        text-align: center;
+        padding: 0px 30px 10px 30px;
+        width: 75%;
+        margin: 0px auto;
+    }
+    .c1,.c2,.c3 {
+        border-bottom: 1px solid #706f6f;
+    }
+}
