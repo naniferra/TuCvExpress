@@ -58,6 +58,7 @@ header nav {
     font-family: 'Alata', sans-serif;
     font-size: 14px;
     font-weight: lighter;
+    text-align: center;
 }
 .quienesSomos .presentacion {
     width: 100%;
@@ -355,13 +356,15 @@ footer .redes {
 }
 .cs5 {
     grid-area: cs5;
-    text-align: right;
+}
+.cs5 h3,p {
+      text-align: right;
 }
 .cs6 {
     grid-area: cs6;
 }
 .cs1 h2, .cs4 h2 {
-    font-size: 36px;
+    font-size: 40px;
     color: white;
     text-align: center;
 }
@@ -411,6 +414,7 @@ footer .redes {
 }
 #formContacto p {
     margin-bottom: 20px;
+    text-align: left;
 }
 form .datos1 {
     display: inline-block;
@@ -432,7 +436,6 @@ form .datos1 {
     background-color: #1d71b8;
     font-size: 16px;
     color:#ffffff;
-    font-weight: bold;
     border: none;
     display: inline;
     margin: 10px;
