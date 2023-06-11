@@ -2,6 +2,28 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+p {
+    color: #404041;
+}
+nav.navbar {
+    font-size: 18px;
+    margin: 0px auto !important;
+}
+nav.navbar a.nav-link {
+    padding: 20px 15px !important;
+}
+nav.navbar a.nav-link:hover {
+    background-color: #1d71b8;
+    color: white;
+}
+a.active {
+    color: #1d71b8 !important;
+    font-weight: bold;
+}
+a.active:hover {
+    color: white !important;
 }
 header {
     width: 100%;
@@ -196,4 +218,223 @@ footer .redes {
     .c1,.c2,.c3 {
         border-bottom: 1px solid #706f6f;
     }
+}
+.RS {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:0.75fr 1fr 1fr 0.75fr;
+    grid-template-rows: 0.75fr 1fr 1fr 0.75fr 1fr;
+    grid-template-areas: 
+    "r1 cv1 cv2 r3"
+    "r1 cv1 cv3 r3"
+    "r1 cv4 cv4 r3"
+    "r2 cv5 cv7 r4"
+    "r2 cv6 cv7 r4";
+    vertical-align: top;
+}
+.r1 {
+    grid-area: r1;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.r2 {
+    grid-area: r2;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.r3 {
+    grid-area: r3;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.r4 {
+    grid-area: r4;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.cv1 {
+    grid-area: cv1;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.cv1 img, .cv7 img {
+    margin: 30px 0px;
+}
+.cv2 {
+    grid-area: cv2;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.cv3 {
+    grid-area: cv3;
+}
+.cv4 {
+    grid-area: cv4;
+}
+.cv5 {
+    grid-area: cv5;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.cv6 {
+    grid-area: cv6;
+}
+.cv7 {
+    grid-area: cv7;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.cv2 h2, .cv5 h2 {
+    font-family: 'Alata', sans-serif;
+    font-size: 36px;
+    color: white;
+    margin: 20px 0px 0px 20px;
+}
+.cv5 h2, .cv6 p {
+    text-align: right;
+}
+.cv5 h2 {
+    margin-right: 20px;
+}
+.cv6 p {
+    text-align: right;
+}
+.cv3 p, .cv6 p {
+    margin: 20px;
+}
+.cv4 ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.r1, .cv4, .r3 {
+    margin-bottom: 50px;
+}
+.Servi {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:0.75fr 1fr 1fr 0.75fr;
+    grid-template-rows: 0.50fr 1.25fr 0.50fr 1.25fr;
+    grid-template-areas: 
+    "s1 cs1 cs1 s3"
+    "s1 cs2 cs3 s3"
+    "s2 cs4 cs4 s4"
+    "s2 cs5 cs6 s4";
+}
+.s1 {
+    grid-area: s1;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.s2 {
+    grid-area: s2;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.s3 {
+    grid-area: s3;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.s4 {
+    grid-area: s4;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.cs1 {
+    grid-area: cs1;
+    height: 100%;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+    padding-top: 4rem;
+}
+.cs2 {
+    grid-area: cs2;
+}
+.cs3 {
+    grid-area: cs3;
+    padding: 2rem;
+}
+.cs4 {
+    grid-area: cs4;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+    text-align: right;
+    padding-top: 4rem;
+}
+.cs5 {
+    grid-area: cs5;
+    text-align: right;
+}
+.cs6 {
+    grid-area: cs6;
+}
+.cs1 h2, .cs4 h2 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+.contacto {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:0.75fr 1fr 0.75fr;
+    grid-template-rows: 0.50fr 1.50fr;
+    grid-template-areas: 
+    "co1 co2 co3"
+    "co1 co4 co3";
+}
+.co1 {
+    grid-area: co1;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+    text-align: right;
+}
+.co2 {
+    grid-area: co2;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+    padding: 3rem 0%;
+}
+.co2 h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 42px;
+}
+.co3 {
+    grid-area: co3;
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+    text-align: right;
+}
+.co4 {
+    grid-area: co4;
+}
+
+/* para el formulario */
+
+#formContacto {
+    width: 650px;
+    margin: 0px auto;
+    padding-top: 30px;
+    font-size: 16px;
+    color:#706f6f;
+    text-align: left;
+}
+#formContacto p {
+    margin-bottom: 20px;
+}
+form .datos1 {
+    display: inline-block;
+    font-size: 14px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+.inputEstilo {
+    font-style: italic;
+    font-size: 12px;
+    color: dimgray;
+    padding: 5px;
+    margin: 10px 0px 0px 5px;
+    display: inline;
+}
+.botonEnviarBorrar {
+    width: 150px;
+    height: 50px;
+    background-color: #1d71b8;
+    font-size: 16px;
+    color:#ffffff;
+    font-weight: bold;
+    border: none;
+    display: inline;
+    margin: 10px;
+    cursor: pointer;
 }
