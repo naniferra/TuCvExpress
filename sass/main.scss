@@ -1,2 +1,20 @@
-//variables de color
-$colorPrincipal:  #1d71b8;
+//seteo general
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+/* p {
+    color: #404041;
+} */
+
+//partials
+@import 'vars';
+@import 'maps';
+@import 'mixins';
+@import 'menuPrincipal';
+@import 'partes';
+@import 'footer';
+@import 'medias';
+

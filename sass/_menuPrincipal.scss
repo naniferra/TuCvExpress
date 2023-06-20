@@ -1,0 +1,39 @@
+$colorPrincipal:  #1d71b8;
+$color: white;
+
+@mixin bordes ($paddin, $margin) {
+    padding: $paddin;
+    margin: $margin;
+}
+
+@mixin size ($width, $heigh) {
+    width: $width;
+    height: $heigh;
+}
+
+header {
+    @include size (100%, 130px);
+    position: sticky;
+    top: 0px;
+    background-color: $color;
+    @include bordes (auto, 0px auto);
+    .modMenu {
+        font-size: 18px;
+        @include bordes(20px 15px, 0px auto);
+        .linkMenu {
+            @include bordes(20px 15px, 0px);
+        }
+        a.linkMenu:hover {
+            background-color: $colorPrincipal;
+            color: $color;
+        }
+        .linkActivo {
+            color: $colorPrincipal;
+            font-weight: bold;
+        }
+        a.linkactivo:hover {
+            color: $color;
+        }
+    }
+}
+

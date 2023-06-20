@@ -1,0 +1,53 @@
+@mixin tamaño1 {
+    width: 350px;
+    height: 300px;
+}
+@mixin tamaños ($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin textos {
+    font-family: $fuente;
+    font-size: 18px;
+    color: $gris;
+    vertical-align: top;
+    padding: 50px 30px;
+}
+@mixin display-justify-margin {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px auto;
+    justify-content: center;
+}
+@mixin txt-14-gris {
+    font-family: $fuente;
+    font-size: 14px;
+    color: $gris;
+}
+@mixin fondoBlue {
+    background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+@mixin titulos1 {
+    font-family: $fuente;
+    font-size: 36px;
+    color: $color;
+    margin: 20px 0px 0px 20px;
+}
+@mixin display-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+@mixin titulos2 {
+    font-size: 40px;
+    color: $color;
+    text-align: center;
+}
+@mixin h1Title {
+    color: $color;
+    font-weight: bold;
+    font-size: 42px;
+}

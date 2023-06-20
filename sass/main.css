@@ -1,1 +1,509 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Alata", sans-serif;
+}
+
+/* p {
+    color: #404041;
+} */
+header {
+  width: 100%;
+  height: 130px;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  padding: auto;
+  margin: 0px auto;
+}
+header .modMenu {
+  font-size: 18px;
+  padding: 20px 15px;
+  margin: 0px auto;
+}
+header .modMenu .linkMenu {
+  padding: 20px 15px;
+  margin: 0px;
+}
+header .modMenu a.linkMenu:hover {
+  background-color: #1d71b8;
+  color: white;
+}
+header .modMenu .linkActivo {
+  color: #1d71b8;
+  font-weight: bold;
+}
+header .modMenu a.linkactivo:hover {
+  color: white;
+}
+
+/* inicia estilos index.html */
+.quienesSomos, .NuestroTrabajo {
+  width: 100%;
+}
+.quienesSomos .presentacion, .NuestroTrabajo .presentacion {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0px auto;
+  justify-content: center;
+}
+.quienesSomos .presentacion .texto, .NuestroTrabajo .presentacion .texto {
+  font-family: "Alata", sans-serif;
+  font-size: 18px;
+  color: #706f6f;
+  vertical-align: top;
+  padding: 50px 30px;
+  width: 350px;
+  height: 300px;
+}
+.quienesSomos .presentacion .img, .NuestroTrabajo .presentacion .img {
+  width: 350px;
+  height: 300px;
+  text-align: right;
+}
+.quienesSomos .titulo, .NuestroTrabajo .titulo {
+  width: 100%;
+  height: 150px;
+  background-color: #1d71b8;
+  text-align: center;
+  padding-top: 40px;
+  font-family: "Alata", sans-serif;
+  color: white;
+}
+.quienesSomos .titulo h2, .NuestroTrabajo .titulo h2 {
+  font-size: 42px;
+}
+.quienesSomos .titulo p, .NuestroTrabajo .titulo p {
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+.NuestroTrabajo .presentacion {
+  flex-flow: row-reverse wrap;
+}
+.NuestroTrabajo .presentacion .texto p {
+  text-align: right;
+}
+
+/* finaliza estilos index.html */
+/* inicia estilos tuCvAliado.html */
+.cvAliado {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "v1 c1 c2 c3 v2" "v1 c4 c5 c5 v2";
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+.cvAliado p {
+  font-family: "Alata", sans-serif;
+  font-size: 14px;
+  color: #706f6f;
+  text-align: left;
+}
+.cvAliado .v1 {
+  grid-area: v1;
+}
+.cvAliado .c1 {
+  grid-area: c1;
+}
+.cvAliado .c2 {
+  grid-area: c2;
+}
+.cvAliado .c3 {
+  grid-area: c3;
+}
+.cvAliado .c4 {
+  grid-area: c4;
+}
+.cvAliado .c5 {
+  grid-area: c5;
+  text-align: center;
+}
+.cvAliado .v2 {
+  grid-area: v2;
+}
+
+/* finaliza estilos tuCvAliado.html */
+/* inicia estilos RRSS-TuCv.html */
+.RS {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.75fr 1fr 1fr 0.75fr;
+  grid-template-rows: 0.75fr 1fr 1fr 0.75fr 1fr;
+  grid-template-areas: "r1 cv1 cv2 r3" "r1 cv1 cv3 r3" "r1 cv4 cv4 r3" "r2 cv5 cv7 r4" "r2 cv6 cv7 r4";
+}
+.RS p {
+  font-family: "Alata", sans-serif;
+  font-size: 14px;
+  color: #706f6f;
+}
+.RS .r1 {
+  grid-area: r1;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.RS .r2 {
+  grid-area: r2;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.RS .r3 {
+  grid-area: r3;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.RS .r4 {
+  grid-area: r4;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.RS .cv1 {
+  grid-area: cv1;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.RS .cv1 img, .RS .cv7 img {
+  margin: 30px 0px;
+}
+.RS .cv2 {
+  grid-area: cv2;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.RS .cv2 h2 {
+  font-family: "Alata", sans-serif;
+  font-size: 36px;
+  color: white;
+  margin: 20px 0px 0px 20px;
+}
+.RS .cv3 {
+  grid-area: cv3;
+}
+.RS .cv3 p {
+  margin: 20px;
+  text-align: left;
+}
+.RS .cv4 {
+  grid-area: cv4;
+}
+.RS .cv4 ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.RS .cv5 {
+  grid-area: cv5;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.RS .cv5 h2 {
+  font-family: "Alata", sans-serif;
+  font-size: 36px;
+  color: white;
+  margin: 20px 0px 0px 20px;
+  text-align: right;
+  margin-right: 20px;
+}
+.RS .cv6 {
+  grid-area: cv6;
+}
+.RS .cv6 p {
+  text-align: right;
+  margin: 20px;
+}
+.RS .cv7 {
+  grid-area: cv7;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.RS .r1, .RS .cv4, .RS .r3 {
+  margin-bottom: 50px;
+}
+
+/* finaliza estilos RRSS-TuCv.html */
+/* inicia estilos servicios-TuCv.html */
+.Servi {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15% 35% 35% 15%;
+  grid-template-rows: 0.5fr 1.25fr 0.5fr 1.25fr;
+  grid-template-areas: "s1 cs1 cs1 s3" "s1 cs2 cs3 s3" "s2 cs4 cs4 s4" "s2 cs5 cs6 s4";
+}
+.Servi p {
+  font-family: "Alata", sans-serif;
+  font-size: 14px;
+  color: #706f6f;
+}
+.Servi .s1 {
+  grid-area: s1;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.Servi .s2 {
+  grid-area: s2;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.Servi .s3 {
+  grid-area: s3;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.Servi .s4 {
+  grid-area: s4;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+}
+.Servi .cs1 {
+  grid-area: cs1;
+  height: 100%;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+  padding: 3rem 100px 0px 100px;
+}
+.Servi .cs1 h2 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+.Servi .cs2 {
+  grid-area: cs2;
+}
+.Servi .cs3 {
+  grid-area: cs3;
+  padding: 2rem;
+}
+.Servi .cs4 {
+  grid-area: cs4;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+  text-align: right;
+  padding: 3rem 100px 0px 100px;
+}
+.Servi .cs4 h2 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+.Servi .cs5 {
+  grid-area: cs5;
+}
+.Servi .cs5 p, .Servi .cs5 h3 {
+  text-align: right;
+}
+.Servi .cs6 {
+  grid-area: cs6;
+}
+
+/* finaliza estilos servicios-TuCv.html */
+/* inicia estilos contacto-TuCv.html */
+.contacto {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.75fr 1fr 0.75fr;
+  grid-template-rows: 0.5fr 1.5fr;
+  grid-template-areas: "co1 co2 co3" "co1 co4 co3";
+  /* estilos del formulario */
+  /* finaliza estilos formulario */
+}
+.contacto p {
+  font-family: "Alata", sans-serif;
+  font-size: 14px;
+  color: #706f6f;
+}
+.contacto .co1 {
+  grid-area: co1;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+  text-align: right;
+}
+.contacto .co2 {
+  grid-area: co2;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+  padding: 3rem 0%;
+}
+.contacto .co2 h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 42px;
+}
+.contacto .co3 {
+  grid-area: co3;
+  background: url(../img/lineaFondoEncabezado.jpg) repeat-x top;
+  text-align: right;
+}
+.contacto .co4 {
+  grid-area: co4;
+}
+.contacto #formContacto {
+  width: 650px;
+  margin: 0px auto;
+  padding-top: 30px;
+  font-size: 14px;
+  color: #706f6f;
+  text-align: left;
+}
+.contacto #formContacto p {
+  margin-bottom: 20px;
+}
+.contacto #formContacto form div p {
+  padding-top: 20px;
+  font-family: "Alata", sans-serif;
+  font-size: 14px;
+  color: #706f6f;
+}
+.contacto #formContacto .datos1 {
+  width: 300px;
+  display: inline-block;
+  font-family: "Alata", sans-serif;
+  font-size: 14px;
+  color: #706f6f;
+  margin-bottom: 20px;
+}
+.contacto #formContacto .inputEstilo {
+  font-style: italic;
+  font-size: 12px;
+  color: dimgray;
+  padding: 5px;
+  margin: 10px 0px 0px 5px;
+  display: inline;
+}
+.contacto #formContacto .botonEnviarBorrar {
+  width: 150px;
+  height: 50px;
+  background-color: #1d71b8;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  display: inline;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* finaliza estilos contactoTuCv.html */
+.pie {
+  width: 75%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-between;
+}
+.pie a {
+  text-decoration: none;
+}
+.pie .copyPie {
+  width: 500px;
+  font: 12px "Alata", sans-serif;
+  text-align: right;
+  color: #706f6f;
+}
+
+footer .redes {
+  width: 500px;
+}
+
+@media (max-width: 767px) {
+  /* inicia index.html responsive */
+  .quienesSomos .presentacion .texto p, .quienesSomos .presentacion .img, .NuestroTrabajo .presentacion .texto p, .NuestroTrabajo .presentacion .img {
+    text-align: center;
+  }
+  /* finaliza index.html responsive */
+  /* inicia tuCvAliado.html responsive */
+  .cvAliado {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr 0.5fr;
+    grid-template-areas: "c1" "c2" "c3" "c4" "c5";
+  }
+  .cvAliado .v1, .cvAliado .v2 {
+    display: none;
+  }
+  .cvAliado .c1, .cvAliado .c2, .cvAliado .c3, .cvAliado .c4 {
+    text-align: center;
+    padding: 0px 30px 10px 30px;
+    width: 75%;
+    margin: 0px auto;
+  }
+  .cvAliado .c1 p, .cvAliado .c2 p, .cvAliado .c3 p, .cvAliado .c4 p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .cvAliado .c1, .cvAliado .c2, .cvAliado .c3 {
+    border-bottom: 1px solid #706f6f;
+  }
+  /* finaliza tuCvAliado.html responsive */
+  /* inicia RRSS-TuCv.html responsive */
+  .RS {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 25% 10% 15% 30% 10%;
+    grid-template-areas: "cv2" "cv1" "cv3" "cv5" "cv7" "cv6";
+    text-align: center;
+  }
+  .RS p {
+    font-size: 16px;
+  }
+  .RS .r1, .RS .r2, .RS .r3, .RS .r4, .RS .cv4 {
+    display: none;
+  }
+  .RS .cv2 h2, .RS .cv5 h2, .RS .cv6 p, .RS .cv3 p {
+    text-align: center;
+  }
+  .RS .cv7, .RS .cv1 {
+    background: none;
+  }
+  .RS .cv7 img {
+    height: 75%;
+  }
+  /* finaliza RRSS-TuCv.html responsive */
+  /* inicia Servicios-TuCv.html responsive */
+  .Servi {
+    grid-template-columns: 100%;
+    grid-template-rows: 0.5fr 0.35fr 1.5fr 0.5fr 0.35fr 1.5fr;
+    grid-template-areas: "cs1" "cs2" "cs3" "cs4" "cs6" "cs5";
+    text-align: center;
+  }
+  .Servi p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .Servi .s1, .Servi .s2, .Servi .s3, .Servi .s3 {
+    display: none;
+  }
+  .Servi .cs2 img, .Servi .cs6 img {
+    width: 50%;
+  }
+  .Servi .cs5 p, .Servi .cs5 h3 {
+    text-align: center;
+  }
+  .Servi .cs1, .Servi .cs4 {
+    padding: 1.75rem 20px 0px 20px;
+  }
+  .Servi .cs1 h2, .Servi .cs4 h2 {
+    font-size: 36px;
+  }
+  /* finaliza Servicios-TuCv.html responsive */
+  /* inicia contacto-TuCv.html responsive */
+  .contacto {
+    grid-template-columns: 100%;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-areas: "co2" "co4";
+  }
+  .contacto .co1, .contacto .co3 {
+    display: none;
+  }
+  .contacto .co2 {
+    width: 100%;
+    padding: 20px 20px;
+    font-size: 36px;
+  }
+  .contacto .co4 {
+    width: 100%;
+  }
+  .contacto .co4 p {
+    font-size: 16px;
+  }
+  .contacto #formContacto {
+    width: 90%;
+  }
+  /* finaliza contacto-TuCv.html responsive */
+}/*# sourceMappingURL=main.css.map */

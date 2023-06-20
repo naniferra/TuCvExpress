@@ -1,0 +1,25 @@
+.pie {
+    width: 75%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+    }
+    .copyPie {
+        width: 500px;
+        font: 12px $fuente;
+        text-align: map-get($estilos, right);
+        color: $gris;
+    }
+
+}
+footer {
+    .redes {
+        width: 500px;
+    }
+}
