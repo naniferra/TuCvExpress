@@ -1,16 +1,6 @@
 $colorPrincipal:  #1d71b8;
 $color: white;
 
-@mixin bordes ($paddin, $margin) {
-    padding: $paddin;
-    margin: $margin;
-}
-
-@mixin size ($width, $heigh) {
-    width: $width;
-    height: $heigh;
-}
-
 header {
     @include size (100%, 130px);
     position: sticky;
@@ -21,7 +11,7 @@ header {
         font-size: 18px;
         @include bordes(20px 15px, 0px auto);
         .linkMenu {
-            @include bordes(20px 15px, 0px);
+            @include bordes(30px, 0px);
         }
         a.linkMenu:hover {
             background-color: $colorPrincipal;
@@ -34,6 +24,9 @@ header {
         a.linkactivo:hover {
             color: $color;
         }
+    }
+    .divCont {
+       justify-content:center;
     }
 }
 

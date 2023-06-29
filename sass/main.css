@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -8,6 +9,116 @@
 /* p {
     color: #404041;
 } */
+@media (max-width: 767px) {
+  /* inicia detalles del menú responsive */
+  header .modMenu a.linkMenu {
+    padding: 10px;
+    margin: 0px;
+  }
+  /* finaliza detalles menú responsive */
+  /* inicia index.html responsive */
+  .quienesSomos .presentacion .texto p, .quienesSomos .presentacion .img, .NuestroTrabajo .presentacion .texto p, .NuestroTrabajo .presentacion .img {
+    text-align: center;
+  }
+  /* finaliza index.html responsive */
+  /* inicia tuCvAliado.html responsive */
+  .cvAliado {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr 0.5fr;
+    grid-template-areas: "c1" "c2" "c3" "c4" "c5";
+  }
+  .cvAliado .v1, .cvAliado .v2 {
+    display: none;
+  }
+  .cvAliado .c1, .cvAliado .c2, .cvAliado .c3, .cvAliado .c4 {
+    text-align: center;
+    padding: 0px 30px 10px 30px;
+    width: 75%;
+    margin: 0px auto;
+  }
+  .cvAliado .c1 p, .cvAliado .c2 p, .cvAliado .c3 p, .cvAliado .c4 p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .cvAliado .c1, .cvAliado .c2, .cvAliado .c3 {
+    border-bottom: 1px solid #706f6f;
+  }
+  /* finaliza tuCvAliado.html responsive */
+  /* inicia RRSS-TuCv.html responsive */
+  .RS {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 25% 10% 15% 30% 10%;
+    grid-template-areas: "cv2" "cv1" "cv3" "cv5" "cv7" "cv6";
+    text-align: center;
+  }
+  .RS p {
+    font-size: 16px;
+  }
+  .RS .r1, .RS .r2, .RS .r3, .RS .r4, .RS .cv4 {
+    display: none;
+  }
+  .RS .cv2 h2, .RS .cv5 h2, .RS .cv6 p, .RS .cv3 p {
+    text-align: center;
+  }
+  .RS .cv7, .RS .cv1 {
+    background: none;
+  }
+  .RS .cv7 img {
+    height: 75%;
+  }
+  /* finaliza RRSS-TuCv.html responsive */
+  /* inicia Servicios-TuCv.html responsive */
+  .Servi {
+    grid-template-columns: 100%;
+    grid-template-rows: 0.5fr 0.35fr 1.5fr 0.5fr 0.35fr 1.5fr;
+    grid-template-areas: "cs1" "cs2" "cs3" "cs4" "cs6" "cs5";
+    text-align: center;
+  }
+  .Servi p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .Servi .s1, .Servi .s2, .Servi .s3, .Servi .s3 {
+    display: none;
+  }
+  .Servi .cs2 img, .Servi .cs6 img {
+    width: 50%;
+  }
+  .Servi .cs5 p, .Servi .cs5 h3 {
+    text-align: center;
+  }
+  .Servi .cs1, .Servi .cs4 {
+    padding: 1.75rem 20px 0px 20px;
+  }
+  .Servi .cs1 h2, .Servi .cs4 h2 {
+    font-size: 36px;
+  }
+  /* finaliza Servicios-TuCv.html responsive */
+  /* inicia contacto-TuCv.html responsive */
+  .contacto {
+    grid-template-columns: 100%;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-areas: "co2" "co4";
+  }
+  .contacto .co1, .contacto .co3 {
+    display: none;
+  }
+  .contacto .co2 {
+    width: 100%;
+    padding: 20px 20px;
+    font-size: 36px;
+  }
+  .contacto .co4 {
+    width: 100%;
+  }
+  .contacto .co4 p {
+    font-size: 16px;
+  }
+  .contacto #formContacto {
+    width: 90%;
+  }
+  /* finaliza contacto-TuCv.html responsive */
+}
 header {
   width: 100%;
   height: 130px;
@@ -23,7 +134,7 @@ header .modMenu {
   margin: 0px auto;
 }
 header .modMenu .linkMenu {
-  padding: 20px 15px;
+  padding: 30px;
   margin: 0px;
 }
 header .modMenu a.linkMenu:hover {
@@ -36,6 +147,9 @@ header .modMenu .linkActivo {
 }
 header .modMenu a.linkactivo:hover {
   color: white;
+}
+header .divCont {
+  justify-content: center;
 }
 
 /* inicia estilos index.html */
@@ -401,109 +515,4 @@ header .modMenu a.linkactivo:hover {
 
 footer .redes {
   width: 500px;
-}
-
-@media (max-width: 767px) {
-  /* inicia index.html responsive */
-  .quienesSomos .presentacion .texto p, .quienesSomos .presentacion .img, .NuestroTrabajo .presentacion .texto p, .NuestroTrabajo .presentacion .img {
-    text-align: center;
-  }
-  /* finaliza index.html responsive */
-  /* inicia tuCvAliado.html responsive */
-  .cvAliado {
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 0.5fr 0.5fr;
-    grid-template-areas: "c1" "c2" "c3" "c4" "c5";
-  }
-  .cvAliado .v1, .cvAliado .v2 {
-    display: none;
-  }
-  .cvAliado .c1, .cvAliado .c2, .cvAliado .c3, .cvAliado .c4 {
-    text-align: center;
-    padding: 0px 30px 10px 30px;
-    width: 75%;
-    margin: 0px auto;
-  }
-  .cvAliado .c1 p, .cvAliado .c2 p, .cvAliado .c3 p, .cvAliado .c4 p {
-    text-align: center;
-    font-size: 16px;
-  }
-  .cvAliado .c1, .cvAliado .c2, .cvAliado .c3 {
-    border-bottom: 1px solid #706f6f;
-  }
-  /* finaliza tuCvAliado.html responsive */
-  /* inicia RRSS-TuCv.html responsive */
-  .RS {
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 25% 10% 15% 30% 10%;
-    grid-template-areas: "cv2" "cv1" "cv3" "cv5" "cv7" "cv6";
-    text-align: center;
-  }
-  .RS p {
-    font-size: 16px;
-  }
-  .RS .r1, .RS .r2, .RS .r3, .RS .r4, .RS .cv4 {
-    display: none;
-  }
-  .RS .cv2 h2, .RS .cv5 h2, .RS .cv6 p, .RS .cv3 p {
-    text-align: center;
-  }
-  .RS .cv7, .RS .cv1 {
-    background: none;
-  }
-  .RS .cv7 img {
-    height: 75%;
-  }
-  /* finaliza RRSS-TuCv.html responsive */
-  /* inicia Servicios-TuCv.html responsive */
-  .Servi {
-    grid-template-columns: 100%;
-    grid-template-rows: 0.5fr 0.35fr 1.5fr 0.5fr 0.35fr 1.5fr;
-    grid-template-areas: "cs1" "cs2" "cs3" "cs4" "cs6" "cs5";
-    text-align: center;
-  }
-  .Servi p {
-    text-align: center;
-    font-size: 16px;
-  }
-  .Servi .s1, .Servi .s2, .Servi .s3, .Servi .s3 {
-    display: none;
-  }
-  .Servi .cs2 img, .Servi .cs6 img {
-    width: 50%;
-  }
-  .Servi .cs5 p, .Servi .cs5 h3 {
-    text-align: center;
-  }
-  .Servi .cs1, .Servi .cs4 {
-    padding: 1.75rem 20px 0px 20px;
-  }
-  .Servi .cs1 h2, .Servi .cs4 h2 {
-    font-size: 36px;
-  }
-  /* finaliza Servicios-TuCv.html responsive */
-  /* inicia contacto-TuCv.html responsive */
-  .contacto {
-    grid-template-columns: 100%;
-    grid-template-rows: 0.5fr 1.5fr;
-    grid-template-areas: "co2" "co4";
-  }
-  .contacto .co1, .contacto .co3 {
-    display: none;
-  }
-  .contacto .co2 {
-    width: 100%;
-    padding: 20px 20px;
-    font-size: 36px;
-  }
-  .contacto .co4 {
-    width: 100%;
-  }
-  .contacto .co4 p {
-    font-size: 16px;
-  }
-  .contacto #formContacto {
-    width: 90%;
-  }
-  /* finaliza contacto-TuCv.html responsive */
 }/*# sourceMappingURL=main.css.map */

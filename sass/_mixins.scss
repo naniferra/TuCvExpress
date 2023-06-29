@@ -1,3 +1,13 @@
+
+@mixin bordes ($paddin, $margin) {
+    padding: $paddin;
+    margin: $margin;
+}
+
+@mixin size ($width, $heigh) {
+    width: $width;
+    height: $heigh;
+}
 @mixin tamaño1 {
     width: 350px;
     height: 300px;

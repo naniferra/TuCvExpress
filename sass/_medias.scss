@@ -1,4 +1,15 @@
 @media (max-width:767px) {
+
+    /* inicia detalles del menú responsive */
+    header {
+        .modMenu {
+            a.linkMenu {
+                @include bordes(10px, 0px);
+            }            
+        }
+    }
+    /* finaliza detalles menú responsive */
+    
     /* inicia index.html responsive */
     .quienesSomos, .NuestroTrabajo {
         .presentacion {
@@ -125,9 +136,6 @@
         width: 90%;
     }
    }
-
-
-
     /* finaliza contacto-TuCv.html responsive */
 
 }
