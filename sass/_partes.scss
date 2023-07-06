@@ -1,325 +1,348 @@
 /* inicia estilos index.html */
-.quienesSomos, .NuestroTrabajo {
-    width: map-get($estilos, ancho);
-    .presentacion {
-        width: map-get($estilos, ancho);
-        @include display-justify-margin;
-        .texto {
-           @include textos;
-           @include tamaño1;
-        }
-        .img {
+#home {
+    .quienesSomos, .NuestroTrabajo {
+        width: map-get($estilos, ancho);  
+        .presentacion {
+            width: map-get($estilos, ancho);
+            @include display-justify-margin;
+            .texto {
+            @include textos;
             @include tamaño1;
-            text-align: map-get($estilos, right);
-        }
-    }
-    .titulo {
-        @include tamaños (100%, 150px);
-        background-color: map-get($estilos, fondo);
-        text-align: map-get($estilos, center);
-        padding-top: map-get($estilos, p40);
-        font-family: map-get($estilos, font);
-        color: $color;
-        h2 {            
-            font-size: map-get($estilos, fontSizeTitle);   
-        }
-        p {            
-            font-size: map-get($estilos, fontP);
-            text-align: map-get($estilos, center);
-            color: $color;
-        }
-    }
-}
-.NuestroTrabajo {
-    .presentacion {
-        flex-flow: row-reverse wrap;
-        .texto {
-            p {
-                text-align:map-get($estilos, right);
             }
-        }        
+            .img {
+                @include tamaño1;
+                text-align: map-get($estilos, right);
+            }
+        }
+        .titulo {
+            @include tamaños (100%, 150px);
+            background-color: map-get($estilos, fondo);
+            text-align: map-get($estilos, center);
+            padding-top: map-get($estilos, p40);
+            font-family: map-get($estilos, font);
+            color: $color;
+            h2 {            
+                font-size: map-get($estilos, fontSizeTitle);   
+            }
+            p {            
+                font-size: map-get($estilos, fontP);
+                text-align: map-get($estilos, center);
+                color: $color;
+            }
+        }
     }
+    .quienesSomos {
+        .presentacion {
+            p {
+                padding-left: 30px;
+            }
+        }
+    }
+    .NuestroTrabajo {
+        .presentacion {
+            flex-flow: row-reverse wrap;
+            .img {
+                text-align: left;
+            }
+            .texto {
+                p {
+                    text-align:map-get($estilos, right);
+                    padding-right: 30px;
+                }
+            }        
+        }
 
+    }
 }
 /* finaliza estilos index.html */
 
 /* inicia estilos tuCvAliado.html */
-
-.cvAliado {
-    @include tamaños (100%, 100%);
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "v1 c1 c2 c3 v2"
-    "v1 c4 c5 c5 v2";
-    grid-gap: 20px;
-    margin-top: 20px;
-    p {
-        @include txt-14-gris;
-        text-align: map-get($estilos, left);
-    }
-    .v1 {
-        grid-area: v1;
-    }
-    .c1 {
-        grid-area: c1;       
-    }
-    .c2 {
-        grid-area: c2;
-    }
-    .c3 {
-        grid-area: c3;
-    }
-    .c4 {
-        grid-area: c4;
-    }
-    .c5 {
-        grid-area: c5;
-        text-align: map-get($estilos, center);
-    }
-    .v2 {
-        grid-area: v2;
+#tuCvAliado {
+    .cvAliado {
+        @include tamaños (100%, 100%);
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "v1 c1 c2 c3 v2"
+        "v1 c4 c5 c5 v2";
+        grid-gap: 20px;
+        margin-top: 20px;
+        p {
+            @include txt-14-gris;
+            text-align: map-get($estilos, left);
+        }
+        .v1 {
+            grid-area: v1;
+        }
+        .c1 {
+            grid-area: c1;       
+        }
+        .c2 {
+            grid-area: c2;
+        }
+        .c3 {
+            grid-area: c3;
+        }
+        .c4 {
+            grid-area: c4;
+        }
+        .c5 {
+            grid-area: c5;
+            text-align: map-get($estilos, center);
+        }
+        .v2 {
+            grid-area: v2;
+        }
     }
 }
 /* finaliza estilos tuCvAliado.html */
 
 /* inicia estilos RRSS-TuCv.html */
-
-.RS {
-    @include tamaños (100%, 100%);
-    display: grid;
-    grid-template-columns:0.75fr 1fr 1fr 0.75fr;
-    grid-template-rows: 0.75fr 1fr 1fr 0.75fr 1fr;
-    grid-template-areas: 
-    "r1 cv1 cv2 r3"
-    "r1 cv1 cv3 r3"
-    "r1 cv4 cv4 r3"
-    "r2 cv5 cv7 r4"
-    "r2 cv6 cv7 r4";
-    p {
-        @include txt-14-gris;
-    }
-    .r1 {
-        grid-area: r1;
-        @include fondoBlue;
-    }
-    .r2 {
-        grid-area: r2;
-        @include fondoBlue;
-    }
-    .r3 {
-        grid-area: r3;
-        @include fondoBlue;
-    }
-    .r4 {
-        grid-area: r4;
-        @include fondoBlue;
-    }
-    .cv1 {
-        grid-area: cv1;
-        @include fondoBlue;
-    }
-    .cv1, .cv7 {
-        img {
-            margin: 30px 0px;
-        }
-    }
-    .cv2 {
-        grid-area: cv2;
-        @include fondoBlue;
-        h2 {
-            @include titulos1;
-        }
-    }
-    .cv3 {
-        grid-area: cv3;
+#cvRRSS {
+    .RS {
+        @include tamaños (100%, 100%);
+        display: grid;
+        grid-template-columns:0.75fr 1fr 1fr 0.75fr;
+        grid-template-rows: 0.75fr 1fr 1fr 0.75fr 1fr;
+        grid-template-areas: 
+        "r1 cv1 cv2 r3"
+        "r1 cv1 cv3 r3"
+        "r1 cv4 cv4 r3"
+        "r2 cv5 cv7 r4"
+        "r2 cv6 cv7 r4";
         p {
-            margin: 20px;
-            text-align: map-get($estilos, left);
+            @include txt-14-gris;
         }
-    }
-    .cv4 {
-        grid-area: cv4;
-        ul {
-            @include display-list;
+        .r1 {
+            grid-area: r1;
+            @include fondoBlue;
         }
-    }
-    .cv5 {
-        grid-area: cv5;
-        @include fondoBlue;
-        h2 {
-            @include titulos1;
-            text-align: map-get($estilos, right);
-            margin-right: 20px;
+        .r2 {
+            grid-area: r2;
+            @include fondoBlue;
         }
-    }
-    .cv6 {
-        grid-area: cv6;
-        p {
-            text-align: map-get($estilos, right);
-            margin: 20px;
+        .r3 {
+            grid-area: r3;
+            @include fondoBlue;
         }
-    }
-    .cv7 {
-        grid-area: cv7;
-        @include fondoBlue;
-    }
-    .r1, .cv4, .r3 {
-        margin-bottom: 50px;
+        .r4 {
+            grid-area: r4;
+            @include fondoBlue;
+        }
+        .cv1 {
+            grid-area: cv1;
+            @include fondoBlue;
+        }
+        .cv1, .cv7 {
+            img {
+                margin: 30px 0px;
+            }
+        }
+        .cv2 {
+            grid-area: cv2;
+            @include fondoBlue;
+            h2 {
+                @include titulos1;
+            }
+        }
+        .cv3 {
+            grid-area: cv3;
+            p {
+                margin: 20px;
+                text-align: map-get($estilos, left);
+            }
+        }
+        .cv4 {
+            grid-area: cv4;
+            ul {
+                @include display-list;
+            }
+        }
+        .cv5 {
+            grid-area: cv5;
+            @include fondoBlue;
+            h2 {
+                @include titulos1;
+                text-align: map-get($estilos, right);
+                margin-right: 20px;
+            }
+        }
+        .cv6 {
+            grid-area: cv6;
+            p {
+                text-align: map-get($estilos, right);
+                margin: 20px;
+            }
+        }
+        .cv7 {
+            grid-area: cv7;
+            @include fondoBlue;
+        }
+        .r1, .cv4, .r3 {
+            margin-bottom: 50px;
+        }
     }
 }
 /* finaliza estilos RRSS-TuCv.html */
 
 /* inicia estilos servicios-TuCv.html */
-
-.Servi {
-    @include tamaños (100%, 100%);
-    display: grid;
-    grid-template-columns:15% 35% 35% 15%;
-    grid-template-rows: 0.50fr 1.25fr 0.50fr 1.25fr;
-    grid-template-areas: 
-    "s1 cs1 cs1 s3"
-    "s1 cs2 cs3 s3"
-    "s2 cs4 cs4 s4"
-    "s2 cs5 cs6 s4";
-    p {
-        @include txt-14-gris;
-    }
-    .s1 {
-        grid-area: s1;
-        @include fondoBlue;
-    }
-    .s2 {
-        grid-area: s2;
-        @include fondoBlue;
-    }
-    .s3 {
-        grid-area: s3;
-        @include fondoBlue;
-    }
-    .s4 {
-        grid-area: s4;
-        @include fondoBlue;
-    }
-    .cs1 {
-        grid-area: cs1;
-        height: map-get($estilos, ancho);       
-        @include fondoBlue;
-        padding: 3rem 100px 0px 100px;
-        h2 {
-            @include titulos2;
+#serviciosMain {
+    .Servi {
+        @include tamaños (100%, 100%);
+        display: grid;
+        grid-template-columns:15% 35% 35% 15%;
+        grid-template-rows: 0.50fr 1.25fr 0.50fr 1.25fr;
+        grid-template-areas: 
+        "s1 cs1 cs1 s3"
+        "s1 cs2 cs3 s3"
+        "s2 cs4 cs4 s4"
+        "s2 cs5 cs6 s4";
+        p {
+            @include txt-14-gris;
         }
-    }
-    .cs2 {
-        grid-area: cs2;
-    }
-    .cs3 {
-        grid-area: cs3;
-        padding: 2rem;
-    }
-    .cs4 {
-        grid-area: cs4;
-        @include fondoBlue;
-        text-align: map-get($estilos, right);
-        padding: 3rem 100px 0px 100px;
-        h2 {
-            @include titulos2;
+        .s1 {
+            grid-area: s1;
+            @include fondoBlue;
         }
-    }
-    .cs5 {
-        grid-area: cs5;
-        p, h3 {
+        .s2 {
+            grid-area: s2;
+            @include fondoBlue;
+        }
+        .s3 {
+            grid-area: s3;
+            @include fondoBlue;
+        }
+        .s4 {
+            grid-area: s4;
+            @include fondoBlue;
+        }
+        .cs1 {
+            grid-area: cs1;
+            height: map-get($estilos, ancho);       
+            @include fondoBlue;
+            padding: 3rem 100px 0px 100px;
+            h2 {
+                @include titulos2;
+            }
+        }
+        .cs2 {
+            grid-area: cs2;
+        }
+        .cs3 {
+            grid-area: cs3;
+            padding: 2rem;
+            p, ul {
+                @include txt-14-gris;                
+            }
+        }
+        .cs4 {
+            grid-area: cs4;
+            @include fondoBlue;
             text-align: map-get($estilos, right);
+            padding: 3rem 100px 0px 100px;
+            h2 {
+                @include titulos2;
+            }
         }
-    }
-    .cs6 {
-        grid-area: cs6;
-    }
+        .cs5 {
+            grid-area: cs5;
+            padding: 10px 30px;
+            p, h3 {
+                text-align: map-get($estilos, right);
+            }
+            p, ul {
+                @include txt-14-gris;                
+            }
+        }
+        .cs6 {
+            grid-area: cs6;
+        }
 
+    }
 }
-
 /* finaliza estilos servicios-TuCv.html */
 
 /* inicia estilos contacto-TuCv.html */
-
-.contacto {
-    @include tamaños (100%, 100%);
-    display: grid;
-    grid-template-columns:0.75fr 1fr 0.75fr;
-    grid-template-rows: 0.50fr 1.50fr;
-    grid-template-areas: 
-    "co1 co2 co3"
-    "co1 co4 co3";
-    p {
-        @include txt-14-gris;
-    }
-    .co1 {
-        grid-area: co1;
-        @include fondoBlue;
-        text-align: map-get($estilos, right);
-    }
-    .co2 {
-        grid-area: co2;
-        @include fondoBlue;
-        padding: 3rem 0%;
-        h1 {
-            @include h1Title;
-        }
-    }
-    .co3 {
-        grid-area: co3;
-        @include fondoBlue;
-        text-align: map-get($estilos, right);
-    }
-    .co4 {
-        grid-area: co4;
-    }
-    /* estilos del formulario */
-    #formContacto {
-        width: 650px;
-        margin: 0px auto;
-        padding-top: 30px;
-        font-size: 14px;
-        color:$gris;
-        text-align:  map-get($estilos, left);
+#contactoMain {
+    .contacto {
+        @include tamaños (100%, 100%);
+        display: grid;
+        grid-template-columns:0.75fr 1fr 0.75fr;
+        grid-template-rows: 0.50fr 1.50fr;
+        grid-template-areas: 
+        "co1 co2 co3"
+        "co1 co4 co3";
         p {
-            margin-bottom: 20px;
+            @include txt-14-gris;
         }
-        form {
-            div {
-                p {
-                    padding-top: 20px;
-                    @include txt-14-gris;     
+        .co1 {
+            grid-area: co1;
+            @include fondoBlue;
+            text-align: map-get($estilos, right);
+        }
+        .co2 {
+            grid-area: co2;
+            @include fondoBlue;
+            padding: 3rem 0%;
+            h1 {
+                @include h1Title;
+            }
+        }
+        .co3 {
+            grid-area: co3;
+            @include fondoBlue;
+            text-align: map-get($estilos, right);
+        }
+        .co4 {
+            grid-area: co4;
+        }
+        /* estilos del formulario */
+        #formContacto {
+            width: 650px;
+            margin: 0px auto;
+            padding-top: 30px;
+            font-size: 14px;
+            color:$gris;
+            text-align:  map-get($estilos, left);
+            p {
+                margin-bottom: 20px;
+            }
+            form {
+                div {
+                    p {
+                        padding-top: 20px;
+                        @include txt-14-gris;     
+                    }
                 }
             }
-        }
-        .datos1 {
-            width: 300px;
-            display: inline-block;
-            @include txt-14-gris;    
-            margin-bottom: 20px;
+            .datos1 {
+                width: 300px;
+                display: inline-block;
+                @include txt-14-gris;    
+                margin-bottom: 20px;
+                }
+            .inputEstilo {
+                font-style: italic;
+                font-size: 12px;
+                color: dimgray;
+                padding: 5px;
+                margin: 10px 0px 0px 5px;
+                display: inline;
             }
-        .inputEstilo {
-            font-style: italic;
-            font-size: 12px;
-            color: dimgray;
-            padding: 5px;
-            margin: 10px 0px 0px 5px;
-            display: inline;
-        }
-        .botonEnviarBorrar {
-            width: 150px;
-            height: 50px;
-            background-color: #1d71b8;
-            font-size: 16px;
-            color:#ffffff;
-            border: none;
-            border-radius: 10px;
-            display: inline;
-            margin: 10px;
-            cursor: pointer;
-        }
-    }/* finaliza estilos formulario */    
+            .botonEnviarBorrar {
+                width: 150px;
+                height: 50px;
+                background-color: #1d71b8;
+                font-size: 16px;
+                color:#ffffff;
+                border: none;
+                border-radius: 10px;
+                display: inline;
+                margin: 10px;
+                cursor: pointer;
+            }
+        }/* finaliza estilos formulario */    
+    }
 }
 /* finaliza estilos contactoTuCv.html */
